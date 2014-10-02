@@ -5,24 +5,5 @@
 		<author href="http://www.badaczewski.com" email="badaczewski@gmail.com">Tim Badaczewski</author>
 		<preference name="phonegap-version" value="3.6.3" />
 		<gap:platform name="ios" />
-		<gap:plugin name="org.apache.cordova.geolocation" />
-		<access origin="http://127.0.0.1*" />
-		<access origin="*.jublo.net" />
-		<access origin="*.twitter.com" />
-		<access origin="*.parseapp.com" />
-		<access origin="*.parse.com" />
-		<access origin="*.apple.com" />
-		<access origin="*.google.com" />
-		<access origin="*.googleapis.com" />
-		<access origin="*.gstatic.com" />
-		<access origin="*.googleusercontent.com" />
-		<access origin="*.twitter.com" subdomains="true" />
-		<access origin="*.parse.com" subdomains="true" />
-		<access origin="*.parseapp.com" subdomains="true" />
-		<access origin="*.apple.com" subdomains="true" />
-		<access origin="*.google.com" subdomains="true" />
-		<access origin="*.googleapis.com" subdomains="true" />
-		<access origin="*.gstatic.com" subdomains="true" />
-		<access origin="*.googleusercontent.com" subdomains="true" />
-		<access origin="*.jublo.net" subdomains="true" />
+		<!--<gap:plugin name="org.apache.cordova.geolocation" />-->
 	</widget>
