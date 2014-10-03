@@ -1,5 +1,9 @@
 document.addEventListener("deviceready", function() {
-	getLocation();
+	try {
+		getLocation();
+	} catch(err) {
+	    alert(err.message);
+	}
 }, false);
 
 function getLocation() {
