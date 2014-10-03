@@ -4,7 +4,47 @@
 		<description>Grabs your current geolocation.</description>
 		<author href="http://www.badaczewski.com" email="badaczewski@gmail.com">Tim Badaczewski</author>
 		<preference name="phonegap-version" value="3.6.3" />
+		<preference name="orientation" value="default" />
+		<preference name="fullscreen" value="false" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="black-opaque" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="false" />
+		<preference name="show-splash-screen-spinner" value="false" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="EnableViewportScale" value="true" />
+		<preference name="MediaPlaybackRequiresUserAction" value="true" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="TopActivityIndicator" value="gray" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="false" />
+		<preference name="HideKeyboardFormAccessoryBar" value="true" />
+		<preference name="SuppressesIncrementalRendering" value="true" />
+		<preference name="ShowSplashScreenSpinner" value="false" />
+		<preference name="LoadingDialog" value="Loading" />
+		<preference name="android-minSdkVersion" value="10" />
+		<preference name="android-installLocation" value="auto" />
+		<preference name="SplashScreenDelay" value="5000" />
+		<preference name="ErrorUrl" value="" />
+		<preference name="BackgroundColor" value="" />
+		<preference name="KeepRunning" value="true" />
+		<preference name="DisallowOverscroll" value="true" />
+		<preference name="LoadUrlTimeoutValue" value="20000" />
+		<preference name="disable-cursor" value="true" />
+		<preference name="StatusBarBackgroundColor" value="#111111" />
 		<gap:platform name="ios" />
+		<gap:platform name="android" />
+		<gap:plugin name="org.apache.cordova.camera" />
 		<gap:plugin name="org.apache.cordova.dialogs" />
+		<gap:plugin name="org.apache.cordova.inappbrowser" />
+		<gap:plugin name="org.apache.cordova.splashscreen" />
+		<gap:plugin name="net.bgta.phonegap.plugin.appversion" />
+		<gap:plugin name="de.phonostar.softkeyboard" />
+		<gap:plugin name="com.phonegap.plugin.statusbar" />
 		<!--<gap:plugin name="org.apache.cordova.geolocation" />-->
+		<access origin="*" />
+		<access origin="*" subdomains="true" />
 	</widget>
