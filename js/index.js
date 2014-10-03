@@ -34,17 +34,14 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        navigator.notification.alert("Ready");
-
-        window.setTimeout(function() {
-                navigator.geolocation.getCurrentPosition(function(data) {
-                    alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
-                });
-            }
-        , 3000);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        console.log('Received Event: ' + id);
+        navigator.notification.alert('Received Event: ' + id);
+        navigator.notification.alert("Ready");
+
+        navigator.geolocation.getCurrentPosition(function(data) {
+            navigator.notification.alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
+        });
     }
 };
