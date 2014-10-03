@@ -1,9 +1,10 @@
 document.addEventListener("deviceready", function() {
-	var location = document.getElementById("location");
-
-	getLocation();
+	//var location = document.getElementById("location");
+	alert("Loaded");
+	//getLocation();
 }, false);
 
+/*
 function getLocation() {
 	var location = document.getElementById("location");
 
@@ -19,3 +20,4 @@ function showPosition(position) {
 
     location.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude; 
 }
+*/
