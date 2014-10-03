@@ -5,6 +5,7 @@
 		<author href="http://www.badaczewski.com" email="badaczewski@gmail.com">Tim Badaczewski</author>
 		<preference name="phonegap-version" value="3.6.3" />
 		<gap:platform name="ios" />
+		<gap:plugin name="org.apache.cordova.geolocation" />
 		<gap:plugin name="org.apache.cordova.dialogs" />
 		<!--<gap:plugin name="org.apache.cordova.camera" />-->
 	</widget>
