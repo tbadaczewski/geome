@@ -2,7 +2,6 @@ var location = document.getElementById("location");
 
 document.addEventListener("deviceready", function() {
 	getLocation();
-	location.innerHTML = "Geolocation is not supported by this browser.";
 }, false);
 
 function getLocation() {
