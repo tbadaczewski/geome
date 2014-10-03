@@ -1,9 +1,9 @@
 document.addEventListener("deviceready", function() {
-	try {
-		getLocation();
-	} catch(err) {
-	    alert(err.message);
-	}
+    if (navigator.geolocation) {
+        alert("Geolocation is supported by this browser.");
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
 }, false);
 
 function getLocation() {
