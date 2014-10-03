@@ -6,7 +6,14 @@
 	</head>
 	<body>
 		<script type="text/javascript" src="phonegap.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
-    	<script type="text/javascript">app.initialize();</script>
+		<script type="text/javascript">
+			document.addEventListener("deviceready", function(){
+				alert("Ready");
+				
+		        navigator.geolocation.getCurrentPosition(function(data) {
+		            alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
+		        });
+			},true);
+		</script>
 	</body>
 </html>
