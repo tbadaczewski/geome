@@ -38,7 +38,6 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         navigator.notification.alert('Received Event: ' + id);
-        navigator.notification.alert("Ready");
 
         navigator.geolocation.getCurrentPosition(function(data) {
             navigator.notification.alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
