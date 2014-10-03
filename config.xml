@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.geome" versionCode="1" version="0.0.1">
+	<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.geome" versionCode="1" version="0.0.2">
 		<name>Geo Me</name>
 		<description>Grabs your current geolocation.</description>
 		<author href="http://www.badaczewski.com" email="badaczewski@gmail.com">Tim Badaczewski</author>
 		<preference name="phonegap-version" value="3.6.3" />
 		<gap:platform name="ios" />
-		<gap:platform name="android" />
-		<gap:plugin name="org.apache.cordova.camera" />
 		<gap:plugin name="org.apache.cordova.dialogs" />
-		<gap:plugin name="org.apache.cordova.inappbrowser" />
-		<gap:plugin name="org.apache.cordova.splashscreen" />
-		<gap:plugin name="net.bgta.phonegap.plugin.appversion" />
-		<gap:plugin name="de.phonostar.softkeyboard" />
-		<gap:plugin name="com.phonegap.plugin.statusbar" />
 		<!--<gap:plugin name="org.apache.cordova.geolocation" />-->
 		<access origin="*" />
 		<access origin="*" subdomains="true" />
