@@ -38,7 +38,7 @@ var app = {
 
         window.setTimeout(function() {
                 navigator.geolocation.getCurrentPosition(function(data) {
-                    navigator.notification.alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
+                    alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
                 });
             }
         , 3000);
