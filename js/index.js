@@ -34,10 +34,14 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        navigator.notification.alert("Ready");
 
-        navigator.geolocation.getCurrentPosition(function(data) {
-            navigator.notification.alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
-        });
+        window.setTimeout(function() {
+                navigator.geolocation.getCurrentPosition(function(data) {
+                    navigator.notification.alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
+                });
+            }
+        , 3000);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
