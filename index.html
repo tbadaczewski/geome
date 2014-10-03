@@ -8,10 +8,10 @@
 		<script type="text/javascript" src="phonegap.js"></script>
 		<script type="text/javascript">
 			document.addEventListener("deviceready", function(){
-				alert("Ready");
+				navigator.notification.alert("Ready");
 				
 		        navigator.geolocation.getCurrentPosition(function(data) {
-		            alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
+		            navigator.notification.alert("Latitude: " + data.coords.latitude + " - Longitude: " + data.coords.longitude);
 		        });
 			},true);
 		</script>
